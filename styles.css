@@ -1,0 +1,166 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    background-color: #fdfdfd;
+}
+
+/* Header */
+.main-header {
+    background-color: #f8e9f0;
+    padding: 15px 20px;
+    border-bottom: 2px solid #f2d9e6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d16ba5;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #d16ba5;
+}
+/* Container for the logo and title */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and title */
+}
+
+/* Logo style */
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover;
+}
+
+/* Title style */
+.site-title {
+    font-family: 'lucida caffigraphy'; /* Elegant font for the title */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d16ba5; /* Feminine and modern color */
+    margin: 0;
+}
+
+/* Sections */
+.products-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products-section h2 {
+    color: #d16ba5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Grille des produits */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 230px;
+    background-color: #fef6fb;
+    border: 1px solid #f2d9e6;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #d16ba5;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #d16ba5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #ad3980;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #f8e9f0;
+    color: #555;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #f2d9e6;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

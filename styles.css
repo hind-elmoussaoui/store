@@ -71,7 +71,7 @@ body {
 
 /* Sections */
 .products-section {
-    padding: 40px 20px;
+    padding: /*40px*/ 20px;
     text-align: center;
     background-color: #fff;
     margin-bottom: 20px;
@@ -95,6 +95,10 @@ body {
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 230px;
     background-color: #fef6fb;
     border: 1px solid #f2d9e6;
@@ -112,20 +116,29 @@ body {
 
 .product-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
+    max-width: 150px; /* Taille uniforme pour toutes les images */
+    height: 200px; /* Fixe une hauteur pour aligner toutes les images */
+    object-fit: cover; /* S'assure que l'image s'adapte bien à son conteneur */
 }
 
 .product-card h3 {
     font-size: 1.2rem;
     color: #d16ba5;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Centre le texte verticalement si plus court */
+    justify-content: center;
 }
 
 .product-card p {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Centre verticalement si le texte est court */
+    text-align: center;
 }
 
 .product-card button {

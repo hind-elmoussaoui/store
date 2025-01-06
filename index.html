@@ -22,7 +22,7 @@
                 <li><a href="#makeup">Maquillage</a></li>
                 <li><a href="#shoes">Chaussures</a></li>
                 <li><a href="#clothing">Vêtements</a></li>
-                <li><i class="fa fa-shopping-cart" id="ouvrirPanier"></i></li>
+                <li><i class="fa fa-shopping-cart" id="ouvrirPanier" ></i></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
     <h2>Nos Cosmétiques</h2>
     <div class="product-grid">
         <div class="product-card">
-            <img src="image/cream.jpg" alt="Crème Hydratante">
+            <img src="image/crem.jpg" alt="Crème Hydratante">
             <h3>Crème Hydratante</h3>
             <p>Crème hydratante pour peau sèche, nourrissante et apaisante.</p>
             <div class="product-footer">
@@ -42,7 +42,7 @@
                     class="fa fa-shopping-cart icon-ajouter"
                     data-produit="Crème Hydratante"
                     data-prix="324,00"
-                    data-image="image/cream.jpg"
+                    data-image="image/crem.jpg"
                     onclick="ajouterAuPanier(this)"
                     ></i>
                 </div>
@@ -328,9 +328,10 @@
             </div>
     </div>
 </section>
+
 <!-- Panier -->
 <div id="panier" class="panier">
-    <button id="fermerPanier">Fermer le panier</button>
+    <button id="fermerPanier" onclick="fermerPanierFunc()">Fermer le panier</button>
     <div id="contenuPanier"></div>
     <div id="totalPrix">Total : 0 MAD</div>
 </div>
